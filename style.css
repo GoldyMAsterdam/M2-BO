@@ -63,6 +63,10 @@ h1 {
     display: flex;
     z-index: 1;
 }
+
+
+
+
 /* Skill.html */
 #skill-container {
     padding: 55px;
@@ -71,13 +75,6 @@ h1 {
     align-items: center;
 }
 
-.skill {
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
 .skill-text .javascript-text {
     align-items: center;
     margin-bottom: 5px; 
@@ -127,11 +124,12 @@ h1 {
 
 
 .skill {
-    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
+    width: 100%; 
 }
 .skill:hover {
     transform: scale(1.05);
@@ -142,54 +140,50 @@ h1 {
 .skill-text {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 5px; 
-    margin-right: 150px;
+    width: 50%;
+}
+
+.skill-text div{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* Dit is voor de programmeer taal in de Skill.html */
 #skill-container p {
     font-size: 2rem;
     color: white;
-    margin-left: 300px;
-    margin-top: 15px;
+    margin-right: 300px;
 }
 
 /* Percentage in de skill.html */
 #skill-container h4 {
     font-size: 1rem;
     color: white;
-    margin-top: 75px;
-    margin-right: 450px;
 }
 /* Icons in Skill.html LEFT SIDE*/
 .HTML-icon {
-    position: absolute;
     width: 140px;
     height: 80px;
-    margin-left: 146px;
-    margin-top: 20px;
 }
 .CSS-icon {
-    position: absolute;
+    margin-left: 35px;
     width: 70px;
     height: 80px;
-    margin-left: 160px;
-    margin-top: 10px;
 }
 .Javascript-icon{
-    position: absolute;
     width: 100px;
     height: 100px;
-    margin-left: 200px;
-    margin-top: 10px;
+    margin-left: 20px;
 }
 .C{
-    position: absolute;
     width: 100px;
     height: 100px;
-    margin-left: 135px;
-    margin-top: 10px;
+    margin-left: 15px;
 }
 
 .progress-html {
@@ -219,14 +213,49 @@ h1 {
     background-color: #68217A;
     border-radius: 5px;
 }
+/* SKILL EINDE */
+
+
+
 /* Projects.html */
 #project-text{
     padding: 5px;
 }
-.project-1{
+.projectTitle{
     color: white;
-    font-size: 2rem;
+    font-size: 2.45rem;
+    text-align: center;
+    margin-top: 100px;
 }
+.ProjectSubTitle {
+    color: white;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 30px;
+}
+#Boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    text-align: center;
+}
+.BoxLeft {
+    color: white;
+    border: 5px solid #9B4DFF;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+/* EINDE PROJECT */
+
+
+
+/* Index.html */
 .naam h1 {
     position: absolute;
     top: 50%;
@@ -400,6 +429,8 @@ nav > ul > li > a {
 li:hover {
     cursor: pointer;
 }
+/* EINDE INDEX */
+
 
 @keyframes drop {
     0% {
