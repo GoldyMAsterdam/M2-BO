@@ -219,39 +219,87 @@ h1 {
 
 /* Projects.html */
 #project-text{
+    display: flex;
     padding: 5px;
 }
 .projectTitle{
     color: white;
-    font-size: 2.45rem;
+    font-size: 2.2rem;
     text-align: center;
     margin-top: 100px;
+    margin-left: -1000px;
+    text-transform: bold;
 }
 .ProjectSubTitle {
     color: white;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     text-align: center;
     margin-top: 30px;
-}
-#Boxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    text-align: center;
-}
-.BoxLeft {
-    color: white;
-    border: 5px solid #9B4DFF;
-    padding: 10px;
-    margin: 10px;
-    width: 100px;
-    border-radius: 10px;
-    height: 100px;
+    margin-right: 1000px;
 }
 
-/* EINDE PROJECT */
+
+#Boxes {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.top-row, .bottom-row {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+}
+
+.BoxLeft, .BoxRight, .BoxUnderLeft, .BoxUnderMiddle, .BoxUnderRight {
+    border: 7px solid; 
+    border-image: linear-gradient(to right, #9370DB, #8A2BE2) 1;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%);
+    padding: 50px;
+    margin: 5px;
+    width: 350px;
+    border-radius: 8px;
+    height: 450px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+
+.BoxLeft, .BoxRight {
+    margin-top: -150px;
+    margin-right: -670px;
+    margin-left: -170px;    
+    margin-bottom: 100px;
+}
+
+.BoxLeft[data-text="BoxText"], .BoxRight[data-text="BoxText"], .BoxUnderLeft[data-text="BoxText"], .BoxUnderMiddle[data-text="BoxText"], .BoxUnderRight[data-text="BoxText"] {
+    color: Black;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 235px;
+  }
+  
+.BoxUnderLeft, .BoxUnderMiddle, .BoxUnderRight {
+    margin: 75px;
+}
+
+.BoxUnderLeft, .BoxUnderMiddle, .BoxUnderRight {
+    margin-top: 50px; 
+}
+
+.BoxLeft:hover, .BoxRight:hover, .BoxUnderLeft:hover, .BoxUnderMiddle:hover, .BoxUnderRight:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* EINDE PROJECT.html */
 
 
 
